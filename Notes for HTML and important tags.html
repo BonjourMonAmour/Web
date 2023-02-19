@@ -1,0 +1,72 @@
+So we usually call the first html file as index.html since this is going to be the homepage the website refers to, so index.html is basically the homepage of the website
+Within the index file we specify what is the type of the file so <!DOCTYPE html>
+Some tags are 'container' tags made to hold other tags within while other tags are made to hold content within.
+So to start off we create a container/category/class which we write our code Within
+<html> code </html>
+Within our container, the code entirely will be indented with no exceptions. The code is composed of two main components, the head and the body.
+The head acts as the settings of the page while the body is the meat and the bones of the webpage ie. the content. Often the body is going to much bigger than the head.
+These two components will be displayed by:
+    <head> settings </head>
+    <body> content </body>
+Terms: Usually the <html> tag is referred to as the parent tag while the <head> tag and <body> tag are referred to as child tags so any tag within the child
+       tags would be a grandchild tag and so on... for instance a  paragraph tag <p> within the body tag <body> would be considered a grandchild tag to the html tag <html></html>.
+        Another example of this would be the title tag <title></title> found inside our head tag <head>. 
+The title tag <title></title> is used to contain content within. It is used to set the title of the website, initially a website's title will be based of off the name of a file
+however once you have multiple files together you use the title tag to set a defined name for your website.
+The order of your tags within your head tag showcases which is shown first on the website.
+To make some text a heading within the document you use a heading tag <h#number></h> in the body tag <body></body>. You can assign each heading tag a number from 1 to 6 such as
+<h1>Heading Title</h1>, <h2>Heading Title</h2>, <h3>Heading Title</h3>, etc... The size of your heading will vary depending on the number assigned where 1 is the biggest sized
+font and 6 is the smallest sized font.
+Under the headings we could classify our content under paragraphs using the paragraph tag <p>Paragraph content</p>. Paragraphs will automatically format themselves as they will 
+add spaces in between each other, etc.  This tag is quite straightforward. You can style the content using other tags within the paragraph tags ie <p> Hi my name is <b>Person</b></p>.
+Another example would be <p> Hi my name is <b><i>Person</i></b></p>.
+Break tags create spaces/blank lines in between to given tags/content using <br/><br/>. This is to not be confused with a horizontal rule tag <hr/> which gives us a black
+horizontal line across the website. The slash / is not always necessary for the hr tag however it is 'correct' html to use it.
+The big and small tags are used to increase the font size of specific words within a sentence/paragraph using <big></big> and <small></small>.
+To add subscripts (ie for chemical formulas) or superscripts (ie for exponents) you use the sub tag <sub></sub> and super tag <sup></sup>:
+            The chemical formula for water is : H<sub>2</sub>O
+            The scientific number of 100 is : 1.00 * 10<sup>2</sup>
+
+Comments are written by inputting <!-- before the comment and you close it by adding --> at the end:
+            <!--
+                <p> I dont like this paragraph I need to update its content </p>
+            -->
+
+META TAGS
+
+Meta tags <meta> are used to define properties/settings of our file for instance to define the character set you use the meta tag <meta charset="UTF-8">
+Meta tags are also used to aid search engines to identify your website, for example Google would look at your file, identify your meta tags and use them to give them a description:
+            <meta name="description" content="This is my amazing website">
+    Within this meta tag I am defining attributes to it so in this example I state I want to define its description then set what I want it to be defined as so its content.
+        name="description" identifies what attribute I am defining which in this case is the description
+        content="This is my amazing website" is the short description found under website titles
+Terms: Within the meta tag <meta> there can be a various number of attributes. In all the examples shown before there has been at least one attribute inside the meta tag.
+        These tags are identified as charset in <meta charset="">, name and content in <meta name="" content="">. In the first meta tag there is only one attribute however in the
+        second one there are two attributes accorded to the meta tag.
+
+To style your paragraph/text/content you can add attributes to your grandchild tag ie. <p style="color:aquamarine;"> This text will be in blue</p>. You can change the bg color
+of the text by adding an attribute for the background color <p style="color:aquamarine; background-color: blueviolet;"></p>. To style your webpage background you use the same
+attribute as the previous one however you add it to the body tag: <body style="background-color: antiquewhite;"></body>
+
+Websites are usually formatted in three parts, the header, the main content and the footer. We can use this info to separate each part of the body tag using the 
+header tag <header></header>, the main tag <main></main> and the footer tag <footer></footer>. Keep in mind these are all sibling tags so they will have the same indent!
+The navigation tag <nav></nav> is used to navigate the users so if I have a list of links, etc. I would use the navigation tag to redirect the user to the links. The navigation tag 
+is a child of the header tag or the main tag or the footer tag. This applies to article tags as well <article></article> and section tags <section></section>.
+
+LINK
+
+To link a url: <a href="https://www.google.com">Google's Homepage</a>
+To open a new tab to your link <a href="https://www.google.com" target="_blank">Google's Homepage</a>
+To link other html files: <a href="index.html">Page2</a> WORKS ONLY WHEN IN SAME DIRECTORY
+            if in different DIRECTORY then <a href="dir/index.html">Page1 in directory</a> dir is the name of your directory
+These instructions apply to linking images as well. 
+
+To use images within the website you need to use the image tag <img src="link_on_internet" alt="secondary_image_link_in_case_first_im_doesnt_work"/>
+If the image is saved localy you can simply write <img src="image.jpg"/>. To modify the size of the image you add a width and height attribute to the image tag 
+ie <img width="100" height="100" src="image.jpeg"/>, however this might compress the image so it is best to find the original image ratio prior and keeping that ratio to the image
+attached on the website. Additionally, if you only modify the width or height, HTML will automatically adjust the aspect ratio for you and will resize the picture correctly.
+
+Block elements are elements that will take the whole width/page to display whereas inline elements only take up as much space as needed, so you could have two inline elements sharing
+the same page/area where a block element would not be able to. As a result, there are two different types of tags to identify which type of element it is: block tags and inline tags.
+A good example of this would be paragraphs vs links, paragraphs can not sit next to each other, they would take up the entire width of the page and would have a blank line between
+them, but you can have multiple links besides each other. Span tags <span></span> are inline containers whereas div tags <div></div> are block containers
